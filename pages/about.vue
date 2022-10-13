@@ -51,7 +51,7 @@ export default {
   head() {
     return {
       meta: [
-      { hid: 'og:type', property: 'og:type', content: 'website' },
+        { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:site_name', property: 'og:site_name', content: 'Nuxt Movie App' },
         { hid: 'og:title', property: 'og:title', content: this.name },
         { hid: 'og:description', property: 'og:description', content: this.email },
