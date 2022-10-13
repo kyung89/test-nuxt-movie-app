@@ -87,6 +87,8 @@ export default {
     await store.dispatch('movie/searchMovieWithId', {
       id: params.id
     })
+    // asyncData 옵션에서 반환되는 값은,
+    // 자동으로 data 옵션으로 등록되며 반응성을 가집니다.
     return {
       imageLoading: true
     }
@@ -121,7 +123,7 @@ export default {
         { hid: 'og:title', property: 'og:title', content: this.theMovie.Title },
         { hid: 'og:description', property: 'og:description', content: this.theMovie.Plot },
         { hid: 'og:image', property: 'og:image', content: this.theMovie.Poster },
-        { hid: 'og:url', property: 'og:url', content: `${process.env.CLIENT_URL}${this.$route.fullPath}` },
+        { hid: 'og:url', property: 'og:url', content: `${process.env.CLIENT_URL}${this.$route.fullPath}` }
       ]
     }
   }

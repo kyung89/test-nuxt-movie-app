@@ -1,4 +1,4 @@
-import Vue from 'vue';
-import loadImage from './loadImage';
+import Vue from 'vue'
+import loadImage from './loadImage'
 
-Vue.use(loadImage);
+Vue.use(loadImage)
